@@ -14,14 +14,21 @@ public class VirtualPet {
     public void feed(){
        int decreaseAmount = getRandomNumber(10, 20);
        petNeeds.decreaseHunger(decreaseAmount);
+
+       petNeeds.decreaseHappiness(decreaseAmount);
     }
     public void drink(){
        int decreaseAmount = getRandomNumber(10, 20);
        petNeeds.decreaseThirst(decreaseAmount);
+
+       petNeeds.decreaseHappiness(decreaseAmount);
     }
     public void play(){
        int increaseAmount = getRandomNumber(10, 20);
        petNeeds.increaseHappiness(increaseAmount);
+
+       petNeeds.increaseHunger(increaseAmount);
+       petNeeds.increaseThirst(increaseAmount);
     }
     public boolean isSick(){
         return petNeeds.getHunger() >= 100 || petNeeds.getThirst() >= 100;

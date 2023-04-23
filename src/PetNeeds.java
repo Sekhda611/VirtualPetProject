@@ -14,17 +14,26 @@ public class PetNeeds {
            hunger = 0;
        }
     }
+    public void increaseHunger(int amount){
+        hunger += amount;
+    }
+    public void increaseThirst(int amount){
+        thirst += amount;
+    }
     public void decreaseThirst(int amount){
         thirst -= amount;
         if(thirst < 0){
             thirst = 0;
         }
     }
-    public void increaseHappiness(int amount){
-      happiness += amount;
-      if(happiness > 100){
-          happiness = 100;
-      }
+    public void increaseHappiness(int amount) {
+        happiness += amount;
+        if (happiness > 100) {
+            happiness = 100;
+        }
+    }
+    public void decreaseHappiness(int amount){
+        happiness -= amount;
     }
     public int getHunger(){
      return hunger;
