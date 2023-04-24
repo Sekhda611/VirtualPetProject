@@ -1,3 +1,9 @@
+/**
+ * @class VirtualPetProject
+ * @author Sonal Sekhda
+ * @course ITEC 2140 secton 04
+ * @date April 21, 2023
+ */
 import java.sql.SQLOutput;
 import java.util.Scanner;
 public class VirtualPetSimulator {
